@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/semikolan-co/MovingCursor#readme",
   "dependencies": {
+    "@babel/preset-react": "^7.16.7",
     "react": "^17.0.2"
   }
 }
