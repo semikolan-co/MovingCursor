@@ -10,9 +10,21 @@
 npm install --save movingcursor
 ```
 
-## Usage
+#### Import in your React App
+You can Import the package in your React App by using the following code:
+```jsx
+import MovingCursor from 'movingcursor';
+```
 
-```tsx
+#### Make components Active
+You can make the components active by adding a data attribute `data-active` as `1` to the component. Like this:
+```jsx
+<span data-active="1">Hover Me</span>
+```
+This will make the cursor glow when the component is hovered.
+
+## Usage
+```js
 import React from 'react'
 import MovingCursor from 'movingcursor'
 
@@ -20,7 +32,7 @@ const MyComponent = () => {
   return (
     <>
       <MovingCursor />
-      <div >
+      <div>
         <h1>Hello World</h1>
         <span data-active={1}>Hover Me</span>
       </div>
