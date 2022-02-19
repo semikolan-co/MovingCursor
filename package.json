@@ -1,10 +1,29 @@
 {
   "name": "movingcursor",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "MovingCursor is a simple React Package which implements a Cursor that follows Mouse Position",
-  "author": "meinhoonharsh",
-  "license": "MIT",
-  "repository": "semikolan-co/movingcursor",
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semikolan-co/MovingCursor.git"
+  },
+  "keywords": [
+    "react",
+    "mouse",
+    "animation",
+    "movement",
+    "events",
+    "cursor",
+    "pointer",
+    "hover",
+    "semikolan"
+  ],
+  "author": "Harsh Vishwakarma <harsh@semikolan.co>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semikolan-co/MovingCursor/issues"
+  },
+  "homepage": "https://github.com/semikolan-co/MovingCursor#readme",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
