@@ -1,0 +1,47 @@
+{
+  "name": "movingcursor",
+  "version": "1.0.1",
+  "description": "MovingCursor is a simple React Package which implements a Cursor that follows Mouse Position",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semikolan-co/MovingCursor.git"
+  },
+  "keywords": [
+    "react",
+    "mouse",
+    "animation",
+    "movement",
+    "events",
+    "cursor",
+    "pointer",
+    "hover",
+    "semikolan"
+  ],
+  "author": "Harsh Vishwakarma <harsh@semikolan.co>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semikolan-co/MovingCursor/issues"
+  },
+  "homepage": "https://github.com/semikolan-co/MovingCursor#readme",
+  "dependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.10.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
