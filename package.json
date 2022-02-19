@@ -1,6 +1,6 @@
 {
   "name": "movingcursor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "MovingCursor is a simple React Package which implements a Cursor that follows Mouse Position",
   
   "repository": {

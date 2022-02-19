@@ -13,15 +13,19 @@ npm install --save movingcursor
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
+import MovingCursor from 'movingcursor'
 
-import MyComponent from 'movingcursor'
-import 'movingcursor/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const MyComponent = () => {
+  return (
+    <>
+      <MovingCursor />
+      <div >
+        <h1>Hello World</h1>
+        <span data-active={1}>Hover Me</span>
+      </div>
+    </>
+  )
 }
 ```
 
