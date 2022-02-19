@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import './MovingCursor.css'
 
-export default function MovingCursor() {
+export default function MovingCursor(props) {
+  const defaultConfig = {
+    color: '#64ffda'
+  }
+  const config = props.config
   const style = {
     left: '1048px',
     top: '264px',
@@ -10,14 +14,13 @@ export default function MovingCursor() {
     height: '35px',
     width: '35px',
     borderRadius: '50%',
-    border: '2px solid #64ffda',
+    border: `2px solid ${config?.color || defaultConfig.color}`,
     transition: 'all 0.5s ease 0s'
   }
 
   const activeStyle = {
-    backgroundColor: '#64ffda',
+    backgroundColor: config?.color || defaultConfig.color,
     opacity: '0.3',
-    border: '2px solid #64ffda',
     transform: 'translate(-50%,-50%) scale(2)'
   }
 
