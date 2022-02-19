@@ -23,15 +23,26 @@ You can make the components active by adding a data attribute `data-active` as `
 ```
 This will make the cursor glow when the component is hovered.
 
+#### Add Custom Configuration
+You can add custom configuration to the package by passing a parameter named `config` to the component. Like this:
+```jsx
+<MovingCursor config={{
+  color: '#ff0000'
+}} />
+```
+
 ## Usage
 ```js
 import React from 'react'
 import MovingCursor from 'movingcursor'
 
 const MyComponent = () => {
+  const cursorConfig = {
+    color: '#ff0000'
+  }
   return (
     <>
-      <MovingCursor />
+      <MovingCursor config={cursorConfig} />
       <div>
         <h1>Hello World</h1>
         <span data-active={1}>Hover Me</span>
