@@ -3,9 +3,12 @@ import React from 'react'
 import MovingCursor from 'movingcursor'
 
 const App = () => {
+  const cursorConfig = {
+    color: '#64ffda'
+  }
   return (
     <>
-      <MovingCursor />
+      <MovingCursor config={cursorConfig} />
       <div
         style={{
           display: 'flex',
