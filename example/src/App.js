@@ -1,14 +1,27 @@
 import React from 'react'
 
-import { ExampleComponent } from 'movingcursor'
-import 'movingcursor/dist/index.css'
+import MovingCursor from 'movingcursor'
 
 const App = () => {
-  return(
-  <div>
-    <ExampleComponent text='Create React Library Example 😄' />
-    <a>Hover this</a>
-  </div>
+  return (
+    <>
+      <MovingCursor />
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100vh',
+          width: '100%',
+          backgroundColor: '#000',
+          fontSize: '2rem',
+          color: '#fff',
+          overflow: 'hidden',
+        }}
+      >
+        <div data-active={1} >Hover this</div>
+      </div>
+    </>
   )
 }
 
