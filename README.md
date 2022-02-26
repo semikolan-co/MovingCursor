@@ -27,7 +27,10 @@ This will make the cursor glow when the component is hovered.
 You can add custom configuration to the package by passing a parameter named `config` to the component. Like this:
 ```jsx
 <MovingCursor config={{
-  color: '#ff0000'
+    color: '#64ffda',
+    size: '35px',
+    borderSize: '2px',
+    delay: '0.2s'
 }} />
 ```
 
@@ -38,7 +41,10 @@ import MovingCursor from 'movingcursor'
 
 const MyComponent = () => {
   const cursorConfig = {
-    color: '#ff0000'
+    color: '#64ffda',
+    size: '35px',
+    borderSize: '2px',
+    delay: '0.2s'
   }
   return (
     <>
