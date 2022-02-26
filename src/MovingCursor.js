@@ -3,19 +3,24 @@ import './MovingCursor.css'
 
 export default function MovingCursor(props) {
   const defaultConfig = {
-    color: '#64ffda'
+    color: '#64ffda',
+    size: '35px',
+    borderSize: '2px',
+    delay: '0.2s'
   }
   const config = props.config
   const style = {
-    left: '1048px',
-    top: '264px',
+    left: '-20px',
+    top: '-20px',
     position: 'absolute',
     transform: 'translate(-50%, -50%)',
-    height: '35px',
-    width: '35px',
+    height: config?.size || defaultConfig.size,
+    width: config?.size || defaultConfig.size,
     borderRadius: '50%',
-    border: `2px solid ${config?.color || defaultConfig.color}`,
-    transition: 'all 0.5s ease 0s'
+    border: `${config?.borderSize || defaultConfig.borderSize} solid ${
+      config?.color || defaultConfig.color
+    }`,
+    transition: `all ${config?.delay || defaultConfig.delay} ease 0s`
   }
 
   const activeStyle = {
