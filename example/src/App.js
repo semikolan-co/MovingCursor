@@ -4,7 +4,10 @@ import MovingCursor from 'movingcursor'
 
 const App = () => {
   const cursorConfig = {
-    color: '#64ffda'
+    color: '#64ffda',
+    size: '35px',
+    borderSize: '2px',
+    delay: '0.2s'
   }
   return (
     <>
